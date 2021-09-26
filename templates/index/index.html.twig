@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% include './layout/header.html.twig' %}
+<main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="index display-3">Hello !</h1>
+          <p>Hey ! You land on my new blog as an angel do. Take it as your home and enjoy the smooth blue. :)</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">See &raquo;</a></p></br></br>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Registration</h2>
+            <p>You may registered before post or comment something. Come on that super fast let's do it in a minute !</p>
+            <p><a class="btn btn-secondary" href="/register" role="button">Register &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Registered ? Login !</h2>
+            <p>You are already registered ? What are you waiting for ? JUST IT THE LOGIN BUTTON AS FAST AS YOU CAN BUDDY.</p>
+            <p><a class="btn btn-secondary" href="/login" role="button">LOGIN &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Visitor</h2>
+            <p>"I'm just lookin' around THANKS". Okay man I'm just asking don't be so mean...</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Look around &raquo;</a></p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </main>
+{% endblock %}

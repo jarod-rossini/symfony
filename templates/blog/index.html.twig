@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% include './layout/header.html.twig' %}
+    <div class="container">
+        <div class="row">
+            {% for post in post %}
+                <div class="card" style="margin: 0 0 5vw 5vw;">
+                    <h1>{{post.title}}</h1>
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <p class="card-text">{{post.content}}</p>
+                        <p>{{post.Author}} | {{post.createdAt  |date("d/m/Y")}}</p>
+                        <a href="/posts/{{post.id}}" class="btn btn-primary">See</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
